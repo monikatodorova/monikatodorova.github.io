@@ -1,0 +1,367 @@
+@import url('https://fonts.googleapis.com/css?family=Baloo+Paaji+2|Molle:400i|Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Courgette&display=swap');
+
+html {
+	scroll-behavior: smooth;
+}
+h1 {
+	font-family: Courgette;
+	color: #A4647F;
+	font-size: 30px;
+}
+p, small {
+	font-family: Poppins;
+}
+
+/* MAIN STYLES */
+.main .overlay {
+	background: rgba(0, 0, 0, 0.7);
+	position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 550px;
+    display:flex;justify-content:center;align-items:center;
+}
+.main img {
+	width: 100%;
+	height: 550px;
+	position: relative;
+}
+.main .info {
+	margin: auto;
+	text-align: center;
+}
+.main .info h1 {
+	font-family: Molle;
+	color: #fff;
+	opacity: 1;
+	font-size: 55px;
+}
+.main .info a {
+	font-family: Poppins;
+	text-align: center;
+	color: rgba(255, 255, 255, 0.7);
+	font-size: 18px;
+}
+.main .info a:hover {
+	text-decoration: none;
+	color: #fff;
+}
+
+/* ABOUT STYLES */
+.about {
+	position: relative;
+	text-align: center;
+	background: #fff;
+	padding-bottom: 100px;
+}
+.about .profile {
+	width: 200px;
+	border-radius: 100%;
+	text-align: center;
+	margin-top: -100px;
+	border: 5px solid #FFF6FA;
+}
+.about .icon {
+	width: 20px;
+	margin-top: 0;
+}
+.about h1 {
+	margin: 30px 0px 10px 0px;
+}
+.about a {
+	color: #A4647F;
+	font-size: 25px;
+	margin: 0px 10px;
+}
+
+/* SKILLS */
+.skills {
+	width: 100%;
+    background: url(../img/bg3.jpg) center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 100px 0px;
+    height: auto;
+    position: relative;
+    color: #fff;
+    text-align: center;
+}
+.skills .overlay {
+	position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+}
+.skills img {
+	width: 80px;
+	border-radius: none;
+	opacity: 0.9;
+	margin: 10px 0;
+}
+.skills img:hover {
+	opacity: 1;
+}
+.skills .icon {
+	border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+	padding-bottom: 30px;
+}
+.skills h1 {
+	color: #fff;
+	z-index: 3;
+	margin: 0px 0px 50px 0px;
+}
+.skills .box {
+	color: #fff;
+	text-align: left;
+	padding: 40px;
+	border-radius: 4px;
+	transition: 0.1s ease all;
+	border: 2px solid rgba(255, 255, 255, 0.4);
+	box-shadow: rgba(0, 0, 0, 0.1) 0 15px 35px;
+	margin-bottom: 50px;
+}
+.skills .box:hover {
+	transform: scale(1.02);
+	border: 2px solid rgba(255, 255, 255, 1);
+}
+.skills .box img {
+	height: 50px;
+	width: 50px;
+	opacity: 1;
+}
+.skills .box img:after {
+	content:'';
+	border-bottom: 2px solid #fff;
+}
+.skills .box p {
+	margin-top: 30px;
+}
+
+/* EXPERIENCE */
+.experience {
+	background: transparent;
+	padding: 100px 0 50px 0;
+	position: relative;
+}
+.experience h1 {
+	color: #A4647F;
+	text-align: center;
+	font-size: 35px;
+	margin-bottom: 40px;
+}
+.experience h2 {
+	color: #000;
+	font-size: 20px;
+}
+.experience .box {
+	color: #000;
+	padding: 40px;
+	background: rgba(255, 255, 255, 1);
+	border-radius: 4px;
+	transition: 0.1s ease all;
+	box-shadow: rgba(0, 0, 0, 0.1) 0 15px 35px;
+	z-index: 2;
+}
+.experience .box:hover {
+	transform: scale(1.02);
+}
+.experience .work-period {
+	font-size: 12px;
+	color: gray;
+	margin-bottom: 10px;
+	font-family: Poppins;
+}
+.experience .fa {
+	font-size: 12px;
+	margin-right: 5px;
+	color: #000;
+}
+.experience .company {
+	border-right: 1px solid rgba(164, 100, 127, 0.4);
+	padding: 50px 0;
+	font-size: 15px;
+	font-family: Poppins;
+}
+.experience .position h2{
+	font-size: 30px;
+	text-transform: uppercase;
+}
+.experience small {
+	font-size: 15px;
+	font-weight: bold;
+}
+.experience li {
+	font-family: Poppins;
+}
+
+/* CONTACT */
+.contact {
+	padding: 80px 0;
+	position: relative;
+	background: #f2f3f4;
+}
+.contact:before {
+    position: absolute;
+    top: -200px;
+    left: 0;
+    width: 100%;
+    height: 250px;
+    background: #f2f3f4;
+    content: ' ';
+    z-index: -1;
+    clip-path: polygon(0 45%, 100% 0, 100% 100%, 0 100%);
+}
+.contact h1 {
+	text-align: center;
+	margin-bottom: 30px;
+}
+.form-control {
+    display: block;
+    width: 100%;
+    padding: 15px 20px;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #C1A875;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: none;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    box-shadow: 0 0 18px rgba(0,0,0,0.06);
+	font-family: Poppins;
+}
+.form-control:focus {
+    border-color: #7C1109;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 4px rgba(124, 17, 9, 0.5);
+}
+.contact-page .text {
+    margin-bottom: 50px;
+}
+.contact-page .icon {
+    display: block;
+}
+.contact-page .icon .fa {
+    margin-right: 10px;
+    color: #7C1109;
+}
+.button {
+	text-align: center;
+	font-family: Poppins;
+}
+.button .btn-primary {
+	background: #A4647F;
+	border-color: #A4647F;
+	padding: 10px 40px;
+	width: 100%;
+}
+/* FOOTER */ 
+.footer {
+	background: #f2f3f4;
+	padding-bottom: 30px;
+}
+.footer p {
+	text-align: center;
+	margin: 0;
+}
+@media all and (min-width: 768px) and (max-width: 1199px) {
+	/* MAIN STYLES */
+	.main .overlay {
+	    height: 300px;
+	}
+	.main img {
+		height: 300px;
+	}
+	.main .info h1 {
+		font-size: 35px;
+		margin-bottom: 10px!important;
+	}
+	.main .info a {
+		font-size: 15px;
+	}
+	/* ABOUT STYLES */
+	.about {
+		padding-bottom: 80px;
+	}
+	.about .profile {
+		width: 150px;
+		margin-top: -80px;
+	}
+	.about h1 {
+		margin: 30px 0px 10px 0px;
+	}
+	.about p {
+		font-size: 15px;
+	}
+	/* SKILLS */
+	.skills {
+	    padding: 80px 0px;
+	}
+	.skills img {
+		width: 60px;
+	}
+	.skills .box:last-of-type {
+		height: 368px;
+	}
+	.experience .company {
+		border: none;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	/* MAIN STYLES */
+	.main .overlay {
+	    height: 220px;
+	}
+	.main img {
+		height: 220px;
+	}
+	.main .info h1 {
+		font-size: 35px;
+		margin-bottom: 10px!important;
+	}
+	.main .info h1 span {
+		margin-top: 0px !important;
+		margin-bottom: 20px !important;
+	}
+	.main .info a {
+		font-size: 14px;
+	}
+	.main .row {
+		margin: 0 -7.5px;
+	}
+	.main .row .col {
+		padding: 0 7.5px;
+	}
+	/* ABOUT STYLES */
+	.about {
+		padding-bottom: 80px;
+	}
+	.about .profile {
+		width: 150px;
+		margin-top: 60px;
+	}
+	.about h1 {
+		margin: 30px 0px 10px 0px;
+	}
+	.about p {
+		font-size: 14px;
+	}
+	/* SKILLS */
+	.skills {
+	    padding: 60px 0px;
+	}
+	.skills img {
+		width: 60px;
+	}
+	.experience .company {
+		border: none;
+	}
+	.footer p {
+		font-size: 12px;
+	}
+}
