@@ -467,6 +467,9 @@ p, small {
 	.skills .icons-mobile {
 		display: block;
 	}
+	.contact .box {
+		width: 80%;
+	}
 	.footer p {
 		font-size: 12px;
 	}
