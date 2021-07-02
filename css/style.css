@@ -339,6 +339,13 @@ p, small {
 	text-align: center;
 	margin: 0;
 }
+.all-images {
+	display: flex;
+	justify-content: space-around;
+}
+.skills .icons-mobile {
+	display: none;
+}
 
 
 
@@ -380,7 +387,7 @@ p, small {
 		width: 60px;
 	}
 	.skills .box {
-		height: 280px;
+		height: 320px;
 	}
 	.experience .company {
 		border: none;
@@ -433,11 +440,32 @@ p, small {
 	.skills .row {
 		display: block;
 	}
+	.skills .row .box {
+		width: 80%;
+		margin: 10px auto;
+	}
+	.skills .icons span {
+		display: block;
+	}
 	.skills img {
-		width: 60px;
+		width: 80px;
+		margin: 20px;
 	}
 	.experience .company {
 		border: none;
+		display: block;
+		width: 100%;
+		padding-top: 0;
+	}
+	.experience .description {
+		width: 100%;
+		display: block;
+	}
+	.skills .icons {
+		display: none;
+	}
+	.skills .icons-mobile {
+		display: block;
 	}
 	.footer p {
 		font-size: 12px;
