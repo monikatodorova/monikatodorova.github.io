@@ -37,8 +37,8 @@
                     <p>My name is Monika. I'm a student in the Faculty of Computer Science and Engineering, based in Skopje, North Macedonia. I'm passionate about programming and design.
                     <br>I am mainly focused on expanding my knowledge in webdesign, working with Bootstrap, HTML5 & CSS or Wordpress. I also have experience as a graphic designer working with Photoshop and Illustrator.
                     My knowledge about C and C++ is gained during my studies and by attending online courses.</p>
-                    <a href="https://www.facebook.com/monika.todorova27"><img src="img/png/facebook.png" class="icon"></i></a>
-                    <a href="https://www.instagram.com/todorovamonikaa/"><img src="img/png/instagram.png" class="icon"></i></a>
+                    <a href="https://www.facebook.com/monika.todorova27" target="_blank"><img src="img/png/facebook.png" class="icon"></i></a>
+                    <a href="https://www.instagram.com/todorovamonikaa/" target="_blank"><img src="img/png/instagram.png" class="icon"></i></a>
                     <a href="#contact"><img src="img/png/mail.png" class="icon"></i></a>
                 </div>
             </div>
@@ -142,6 +142,27 @@
             <p>© 2021 Monika Todorova <br> All rights are reserved.</p>
         </div>
     </div>
+
+    <button onclick="topFunction()" id="scroll" title="Go to top" style="display: block;"><i class="fa fa-angle-up" style="font-size:24px" aria-hidden="true"></i>
+    </button>
+
+    <script>
+        var mybutton = document.getElementById("scroll");
+        window.onscroll = function() {scrollFunction()};
+    
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+    
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
     
 </body>
 </html>

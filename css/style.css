@@ -291,7 +291,7 @@ p, small {
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
-    color: #C1A875;
+    color: rgb(59, 59, 59);
     background-color: #fff;
     background-clip: padding-box;
     border: none;
@@ -347,6 +347,31 @@ p, small {
 	display: none;
 }
 
+#scroll {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #A4647F;
+	opacity: 0.8;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+    width: 40px;
+    height: 40px;
+	transition: 0.1s ease all;
+}
+#scroll:hover {
+	opacity: 1;
+	transform: scale(1.05);
+}
+#scroll .fa {
+	font-size: 18px!important;
+}
 
 
 /* RESPONSIVE */
@@ -466,9 +491,6 @@ p, small {
 	}
 	.skills .icons-mobile {
 		display: block;
-	}
-	.contact .box {
-		width: 80%;
 	}
 	.footer p {
 		font-size: 12px;
